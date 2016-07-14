@@ -1,0 +1,21 @@
+<?php
+include("/application/included/dbconnect.php");
+$login = $_SESSION['user'];
+$query_user = "SELECT * FROM `users` WHERE `login`='$login'";
+$result_user = mysqli_query($conn, $query_user);
+$row_user = mysqli_fetch_array($result_user);
+$user_id = $row_user['id'];
+$user_email = $row_user['e-mail'];
+$user_rights = $row_user['rights'];
+$user_LastName = $row_user['LastName'];
+$user_FirstName = $row_user['FirstName'];
+$user_FathName = $row_user['FathName'];
+$user_kath = $row_user['kath'];
+$user_degree = $row_user['degree'];
+$user_ngroup = $row_user['ngroup'];
+$user_speciality = $row_user['speciality'];
+$user_course = $row_user['course'];
+$user_login = $row_user['login'];
+$user_password = $row_user['password'];
+$user_progress = $row_user['progress_theorie'];
+$user_tests = $row_user['test_results'];

@@ -1,0 +1,539 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.area {
+    display: flex;
+}
+.block {
+    flew-direction: row;
+    justify-content: space-around;
+}
+.directory-head {
+    font-family: Tahoma;
+    font-weight: bold;
+
+}
+/* ALERTS */
+.sys-message {
+    display: block;
+    width: 200px;
+    border-radius: 5px;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    z-index: 10;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-family: tahoma;
+    font-weight: bold;
+}
+
+.fail {
+    background-color: #f1583c;
+}
+
+.success {
+    background-color: #9cdb47;
+}
+/*=== HEADER ===*/
+
+.site-header {
+    width: 100%;
+    height: 50px;
+    background-color: #0054a6;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 2px 10px black;
+}
+
+.site-header>div {
+    width: 19%;
+}
+
+.logo {
+    padding: 3px;
+}
+
+.logo>a>img {
+    width: 150px;
+}
+
+.euk-title, .entry-title {
+    padding: 14px;
+    font-family: Tahoma;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.entry-title {
+    padding: 14px;
+    position: relative;
+}
+.entry-title>span {
+    cursor: pointer;
+}
+
+
+/*ENTRY FORM*/
+.entry-form {
+    background-color: white;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 0 2px 10px black;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    top: 40px;
+    z-index: 5;
+    display: none;
+}
+#entry-form>input {
+    width: 85%;
+    background-color: white;
+    height: 25px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+#enbutton {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    width: 90%;
+    height: 25px;
+    background-color: #9cdb47;
+    padding: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 0;
+}
+
+/*=== MAIN-PAGE ===*/
+/*SEATS*/
+.parliament-title {
+    width: 48%;
+    margin-top: 10px;
+    padding-left: 10%;
+}
+
+#seats23, #regions-title {
+    width: 70%;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.p-selector-title {
+    width: 165px;
+    height: 43px;
+    background-color: #f1f1f1;
+    position: absolute;
+    /*top: -10px;*/
+    left: 70px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 4px;
+    z-index: 4;
+}
+
+.party-el-title {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.p-red {
+    background-color: #fea6a2;
+}
+
+.p-orange {
+    background-color: #fee3a2;
+}
+
+.p-blue {
+    background-color: #a2eefe;
+}
+
+.p-purple {
+    background-color: #e08bfe;
+}
+
+/*REGISTRATION*/
+.registration-title-m {
+    width: 48%;
+    padding-left: 10%;
+}
+.registration-title {
+    width: 70%;
+    height: 500px;
+    box-shadow: 0px 2px 10px black;
+    padding: 10px;
+    margin-left: -3%;
+    box-sizing: border-box;
+}
+.registration-title>h2 {
+    font-family: Tahoma;
+    font-weight: normal;
+}
+
+.regform>input {
+    width: 97%;
+    height: 30px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    font-family: Tahoma;
+    font-size: 1.1em;
+}
+.regform>input[placeholder] {
+    text-align: center;
+}
+#regSubmit {
+    width: 100%;
+    height: 30px;
+    background-color: #9cdb47;
+    color: white;
+    padding: 3px;
+    font-family: Tahoma;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+}
+/*=== PAGES FOR ENTERED USERS ===*/
+/*menu*/
+.menu {
+    width: 15%;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 0 2px 10px black;
+    margin-right: 10px;
+}
+.menu-ul {
+    padding-left: 0px;
+    margin: 0px;
+}
+.menu-ul>a {
+    text-decoration: none;
+    color: black;;
+}
+.menu-item {
+    list-style-type: none;
+    font-family: Verdana;
+    font-size: 1.1em;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.menu-item:hover {
+    background-color: #d4cfff;
+}
+/*=== PROFILE PAGE ===*/
+.main-info {
+    width: 70%;
+    padding-left: 10px;
+}
+.profile-up {}
+.profile-img {
+    width: 150px;
+    height: 205px;
+    float: left;
+    margin-right: 20px;
+}
+.profile-name, .profile-education, .profile-group {
+    font-family: Verdana;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+.profile-education, .profile-group {
+    font-size: 1em;
+}
+.profile-mid-rank-g {
+    margin-top: 2em;
+}
+.profile-mid-rank-a {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-family: Verdana;
+    font-size: 0.65em;
+    font-weight: bold;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.profile-mid-rank-m {
+    display: block;
+    margin-top: 10px;
+    font-size: 3em;
+}
+.profile-down {
+    clear: both;
+    margin-top: 10px;
+}
+.profile-p-b-t {
+    font-family: Verdana;
+    font-size: 1.1em;
+}
+.profile-p-b {
+    display: inline-block;
+    width: 300px;
+    height: 30px;
+    position: relative;
+    margin-top: 5px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 3px;
+    font-family: Verdana;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+.profile-p-b>span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 29px;
+    z-index: -1;
+}
+.con-button {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    background-color: #9cdb47;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 3px;
+    text-align: center;
+    color: white;
+    font-family: Verdana;
+}
+.profile-t-head-row {
+    background-color: #b4b7e6 !important;
+    height: 1.7em;
+    text-align: center;
+}
+.profile-table>table {
+    margin-top: 10px;
+    width: 90%;
+}
+.profile-table-tb>tr:nth-child(odd){
+    background-color: #d4cfff;
+}
+.profile-table-tb>tr:nth-child(even){
+    background-color: #e4e1ff;
+}
+.profile-t-m {
+    text-align: center;
+}
+.profile-table-tb>tr>td {
+    font-family: Verdana;
+    padding: 3px;
+}
+.red-button {
+    margin-top: 10px;
+    display: block;
+    width: 170px;
+    height: 30px;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 5px;
+    color: white;
+    font-family: Verdana;
+    background-color: #503e69;
+}
+.red-button>img {
+    margin-right: 10px;
+    margin-top: 3px;
+    float: left;
+}
+.red-button>span {
+    margin-buttom: 10px;
+}
+
+/* coach */
+.right-info {
+    width: 17%;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 0 2px 10px black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.right-info-head {
+    font-family: Verdana;
+    font-size: 1.2em;
+}
+.right-info-photo {
+    width: 121px;
+    height: 170px;
+}
+.right-info-name {
+    font-family: Verdana;
+    font-size: 1.1em;
+}
+.right-info-name2 {
+    font-size: 0.9 !important;
+    font-weight: normal;
+}
+.right-info>p {
+    font-family: Verdana;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+/*edit profile page*/
+.profile-b-with-forms {
+    margin-top: 15px;
+}
+#changeMainInfo, #changePassword {
+    margin-bottom: 20px;
+}
+#changeMainInfo>label, #changePassword>label, #createTest>label {
+    display: block;
+    font-family: Arial;
+    margin-bottom: 15px;
+}
+#changeMainInfo>label>input, #changeMainInfo>label>select, #changePassword>label>input, #createTest>label>input, #createTest>label>select {
+    vertical-align: middle;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 1.05em;
+    width: 200px;
+    height: 25px;
+    box-sizing: border-box;
+}
+.profile-edit-input-s {
+    display: inline-block;
+    float: left;
+    width: 150px;
+    height: 25px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+#changePassSubmit, #editInfoSubmit, #createTestBut, .button-n {
+    display: block;
+    margin-left: 150px;
+    width: 120px;
+    height: 30px;
+    background-color: #9cdb47;
+    box-sizing: border-box;
+    padding: 3px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-family: Verdana;
+}
+
+/*=== TESTS ===*/
+.tests-add-a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.tests-add {
+    display: inline-block;
+    width: 185px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #9cdb47;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.tests-add>span {
+    font-family: tahoma;
+    display: inline-block;
+    padding: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+}
+.tests-add>img {
+    float: right;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.summary-tests-table>tbody>tr>td {
+    height: 35px;
+    border-bottom: 1px solid lightsteelblue;
+    font-family: Verdana;
+}
+.summary-tests-table>tbody>tr:first-child>td {
+    border-top: 1px solid lightsteelblue;
+}
+.summary-tests-table>tbody>tr>td:first-child {
+     width: 60%;
+ }
+.theory-table>tbody>tr>td:first-child {
+    width: 68%;
+}
+.summary-tests-table>tbody>tr>td:nth-child(2) {
+    width: 15%;
+    text-align: center;
+}
+.summary-tests-table>tbody>tr>td>a.btn {
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: #9cdb47;
+    color: white;
+}
+.type-of-test {
+    font-family: Tahoma;
+    font-style: italic;
+    text-align: center;
+}
+.num-quest {
+    font-family: Arial;
+}
+.question-answers {
+    font-family: Arial;
+    font-size: 1.05em;
+}
+
+/* === MEDIA === */
+/* photos */
+.send-photo-form {
+    width: 50%;
+    background-color: ghostwhite;
+    padding: 2%;
+    border-radius: 5px;
+    margin-bottom: 3em;
+    display: none;
+}
+.send-photo-form>input {
+    margin-bottom: 0.3em;
+}
+.send-p-title {
+    width: 95%;
+    height: 2.3em;
+    padding: 0.4em;
+    box-sizing: border-box;
+}
+.send-p-comment {
+    width: 95%;
+    height: 7em;
+    padding: 0.4em;
+    box-sizing: border-box;
+}
+.send-p-but {
+    border: 0;
+    font-family: tahoma;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
